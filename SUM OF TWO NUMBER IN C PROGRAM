@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,d;
+    printf("Enter the register no: ");
+    scanf("%d",&a);
+    printf("The roll no. is %d",a);
+    printf("\nEnter mark1: ");
+    scanf("%d",&b);
+    printf("Enter mark2: ");
+    scanf("%d",&c);
+    d=b+c;
+    printf("Total marks: %d ",d);
+    
+    return 0;
+}
