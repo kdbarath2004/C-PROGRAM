@@ -1,0 +1,33 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    // Write C code here
+    int a,i;
+    char b[8];
+    printf("Enter no: ");
+    scanf("%d",&a);
+    printf("The given input no. %d\n",a);
+    sprintf(b,"%d",a);
+    printf("Output string: %s\n",b);
+    int c = strlen(b);
+    printf("The length of string: %d\n",c);
+    for(i=0; i<c; i++){
+        if(b[i]=='0'){
+            b[i]='1';
+        }
+    }
+    printf("\nChanged string :%s",b);
+    
+    /*
+    printf("The changed string is: %c\n",b[0]);
+    printf("The changed string is: %c\n",b[1]);
+    printf("The changed string is: %c\n",b[2]);
+    printf("The changed string is: %c\n",b[3]);
+    printf("The changed string is: %c\n",b[4]);
+    printf("The changed string is: %c\n",b[5]);
+    printf("The changed string is: %c\n",b[6]);
+*/
+    return 0;
+}
